@@ -1,0 +1,29 @@
+{
+  "name": "tw-bookcase",
+  "version": "1.0.0",
+  "description": "Proxy server and admin app for multi-TiddlyWiki instances",
+  "author": "Devin Weaver (@sukima) <suki@tritarget.org> (https://tritarget.org/)",
+  "license": "MIT",
+  "preferGlobal": "true",
+  "private": false,
+  "main": "./libs/bookcase.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sukima/tw-bookcase.git"
+  },
+  "bin": {
+    "bookcase": "./bookcase.js"
+  },
+  "keywords": [
+    "tiddlywiki",
+    "tiddlywiki5",
+    "wiki",
+    "server"
+  ],
+  "dependencies": {
+    "tiddlywiki": "^5.1.18"
+  },
+  "engines": {
+    "node": ">=10.15.3"
+  }
+}
