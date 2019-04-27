@@ -1,0 +1,10 @@
+title: $:/buttons/bookcase-import
+
+<$button
+  class="tc-btn-invisible"
+  tooltip="Import an existing TiddlyWiki folder"
+>
+<$action-sendmessage $message="tm-modal" $param="$:/modals/import-wiki"/>
+{{$:/core/images/import-button}}
+Import Wiki
+</$button>

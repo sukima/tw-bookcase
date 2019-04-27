@@ -1,0 +1,12 @@
+title: About
+
+{{AboutIntro}}
+
+* [[How to Install]]
+* [[How to Use]]
+* [[Configuration]]
+* [[Why]]
+* [[License]]
+* [[Contributing]]
+
+''Application Version:'' <code>{{$:/state/bookcase-meta##app-version}}</code>

@@ -1,0 +1,15 @@
+title: $:/modals/create-footer
+
+<$button>
+<$action-sendmessage $message="tm-close-tiddler"/>
+<$action-deletetiddler $tiddler="$:/temp/create-path-value"/>
+{{$:/core/images/close-button}}
+Dismiss
+</$button>
+<$button>
+<$action-sendmessage $message="tm-close-tiddler"/>
+<$action-sendmessage $message="bookcase-create-wiki" $param={{$:/temp/create-path-value}}/>
+<$action-deletetiddler $tiddler="$:/temp/create-path-value"/>
+{{$:/core/images/done-button}}
+Create
+</$button>

@@ -1,0 +1,29 @@
+title: How to Use
+
+TW Bookcase takes inspiration from [[TiddlyWiki on Node.js|https://tiddlywiki.com/#Installing%20TiddlyWiki%20on%20Node.js]] in how it works. Much like how the ~TiddlyWiki looks for a `tiddlywiki.info` file in the directory you point it to so does TW Bookcase (`tw-bookcase.info` in this case).
+
+The `--init` command will generate this file for you.
+
+The `--listen` command will start the application.
+
+The syntax for commands is:
+
+```
+tw-bookcase path/to/tw-bookcase.info --init
+tw-bookcase path/to/tw-bookcase.info --listen
+```
+
+Once the server is running it will serve the main application which will show a list of know ~TiddlyWikis.
+
+Each tiddlers title can be changed by editing the site title in each ~TiddlyWiki instance. TW Bookcase will pick up the change.
+
+!! Creating a new wiki
+{{Creating a new wiki}}
+
+!! Importing an existing wiki
+{{Importing an existing wiki}}
+
+!! Deleting a wiki
+{{Deleting a wiki}}
+
+{{BrowseDirectoryDisclaimer}}

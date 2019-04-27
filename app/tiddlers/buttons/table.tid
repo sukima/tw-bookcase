@@ -1,0 +1,10 @@
+title: $:/buttons/bookcase-table
+
+<$button
+  class="tc-btn-invisible"
+  tooltip="Show wikis in a table view"
+  set="$:/state/bookcase-view-mode"
+  setTo="table"
+>
+{{$:/core/images/storyview-classic}}
+</$button>

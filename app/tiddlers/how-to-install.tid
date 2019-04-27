@@ -1,0 +1,23 @@
+title: How to Install
+
+# Install [[Node.js]]
+#* either from your favourite package manager: typically `apt-get install nodejs` on Debian/Ubuntu Linux or [[Termux for Android|Serving TW5 from Android]], or `brew install node` on a Mac
+#* or directly from http://nodejs.org
+# Open a command line terminal and type:
+#> `npm install -g tw-bookcase`
+#> If it fails with an error you may need to re-run the command as an administrator:
+#> `sudo npm install -g tw-bookcase` (Mac/Linux)
+# Check TW Bookcase is installed by typing:
+#> `tw-bookcase --version`
+# In response, you should see TW Bookcase report its current version (eg "{{$:/state/bookcase-meta##app-version}}"; you may also see other debugging information reported)
+# Try it out:
+## `tw-bookcase mynewwiki --init` to create a folder for a new wiki that includes server-related components
+## `tw-bookcase mynewwiki --listen` to start TW Bookcase
+## Visit http://127.0.0.1:8088/ in your browser (Note the default port number is `8088`)
+# Learn more about [[How to Use]] TW Bookcase.
+
+The `-g` flag causes TW Bookcase to be installed globally. Without it, TW Bookcase will only be available in the directory where you installed it.
+
+If you are using Debian or Debian-based Linux and you are receiving a `node: command not found` error though node.js package is installed, you may need to create a symbolic link between `nodejs` and `node`. Consult your distro's manual and `whereis` to correctly create a link. See github [[issue 1434|http://github.com/Jermolene/TiddlyWiki5/issues/1434]]
+
+Example Debian v8.0: `sudo ln -s /usr/bin/nodejs /usr/bin/node`

@@ -1,0 +1,25 @@
+title: $:/modals/import-wiki
+subtitle: Import an existing ~TiddlyWiki folder
+footer: <$transclude tiddler="$:/modals/import-footer"/>
+
+
+<style scoped>
+.bookcase-path-input {
+  width: 100%;
+}
+</style>
+
+Please enter the ''full'' path to an //existing// ~TiddlyWiki folder. This will not override or move the existing folder but just link it here for convenient access with TW Bookcase.
+
+<$keyboard key="enter">
+<$action-sendmessage $message="tm-close-tiddler"/>
+<$action-sendmessage $message="bookcase-import-wiki" $param={{$:/temp/import-path-value}}/>
+<$action-deletetiddler $tiddler="$:/temp/import-path-value"/>
+<$edit-text
+  tag="input"
+  class="bookcase-path-input"
+  tiddler="$:/temp/import-path-value"
+  default={{$:/state/bookcase-meta##default-path}}
+  placeholder={{$:/state/bookcase-meta##default-path}}
+/>
+</$keyboard>

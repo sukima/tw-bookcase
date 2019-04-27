@@ -1,0 +1,3 @@
+title: $:/plugins/tw-bookcase/messages/import-success
+
+Imported <$text text=<<title>>/>

@@ -1,0 +1,13 @@
+title: Why
+
+This came about when I successfully accomplished getting a ~TiddlyWiki instance running as a launch program. This allowed me to set my browser's homepage to the running ~TiddlyWiki. I then realized that if I wanted more then one I had to allocate and manage another port number. I really didn't want to load multiple instances just for the few occasions were I might want to work on a particular wiki.
+
+That was when realized I could write a simple proxy server in Node which would proxy the network to a instance via [[Unix Sockets]]. This application is the result of that.
+
+The use case is for turning your desktop into a server which can link to or create multiple wikis and proxy to them when you need them. When you don't use one the resources are freed. This also means each wiki is managed by ~TiddlyWiki itself and the storage mechanism is the same as if you loaded them individually. This design allows easy backups, portability, and does not lock you into using this application if you want to move the wikis else where.
+
+!! What this application is //not//
+
+This is not a solution for managing Single HTML versions. It is not a solution to back execute ~TiddlyWiki commands. And it is not an alternative saving mechanism.
+
+It is simply a front end for accessing many individual ~TiddlyWikis through one network port.

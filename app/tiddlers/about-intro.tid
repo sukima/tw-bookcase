@@ -1,0 +1,5 @@
+title: AboutIntro
+
+TW Bookcase is a ~TiddlyWiki management application. It consolidates disparate ~TiddlyWiki folders on your computer into one management application.
+
+TW Bookcase serves ~TiddlyWiki instances by proxying them so you can have many instances with only //one// web sever running.

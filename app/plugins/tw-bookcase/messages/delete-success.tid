@@ -1,0 +1,3 @@
+title: $:/plugins/tw-bookcase/messages/delete-success
+
+<$text text=<<title>>/> has been moved to your system trash

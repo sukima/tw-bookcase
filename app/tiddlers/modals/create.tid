@@ -1,0 +1,25 @@
+title: $:/modals/create-wiki
+subtitle: Create a new ~TiddlyWiki folder
+footer: <$transclude tiddler="$:/modals/create-footer"/>
+
+
+<style scoped>
+.bookcase-path-input {
+  width: 100%;
+}
+</style>
+
+Please enter the ''full'' path to a //new// ~TiddlyWiki folder. This will //create// the folder and install a fresh ~TiddlyWiki there.
+
+<$keyboard key="enter">
+<$action-sendmessage $message="tm-close-tiddler"/>
+<$action-sendmessage $message="bookcase-create-wiki" $param={{$:/temp/create-path-value}}/>
+<$action-deletetiddler $tiddler="$:/temp/create-path-value"/>
+<$edit-text
+  tag="input"
+  class="bookcase-path-input"
+  tiddler="$:/temp/create-path-value"
+  default={{$:/state/bookcase-meta##default-path}}
+  placeholder={{$:/state/bookcase-meta##default-path}}
+/>
+</$keyboard>

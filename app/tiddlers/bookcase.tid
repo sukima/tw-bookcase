@@ -1,0 +1,18 @@
+title: Bookcase
+
+<div style="text-align: right; float: right; margin-bottom: 10px">
+<$transclude tiddler="$:/buttons/bookcase-create"/>
+<$transclude tiddler="$:/buttons/bookcase-import"/>
+<br>
+<$transclude tiddler="$:/buttons/bookcase-gallery"/>
+<$transclude tiddler="$:/buttons/bookcase-table"/>
+</div>
+
+{{Introduction}}
+
+<$reveal type="match" state="$:/state/bookcase-view-mode" text="table">
+<$transclude tiddler="$:/views/bookcase-table"/>
+</$reveal>
+<$reveal type="match" state="$:/state/bookcase-view-mode" text="gallery">
+<$transclude tiddler="$:/views/bookcase-gallery"/>
+</$reveal>

@@ -1,0 +1,7 @@
+title: DefaultPath
+
+When you [[create|CreateWikiInstructions]] or [[import|ImportWikiInstructions]] a wiki you must provide the dialog with a path. To make it a little easier that field can be pre-populated with the path specified with the `defaultPath` [[Configuration]] option.
+
+Although it is not required to use this path when creating or importing it only helps if you have a common place to store ~TiddlyWikis. If this configuration is missing the default is in a `wikis` folder in the same directory where the `tw-bookcase.info` file resides.
+
+{{BrowseDirectoryDisclaimer}}

@@ -1,0 +1,7 @@
+title: $:/plugins/tw-bookcase/messages/error
+
+There was a problem with the server: <code>{{!!code}}</code>
+
+<<<
+<$text text={{!!message}}/>
+<<<

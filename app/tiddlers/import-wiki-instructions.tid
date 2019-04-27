@@ -1,0 +1,3 @@
+title: Importing an existing wiki
+
+This action will ask you for a path that has an existing ~TiddlyWiki folder. This will then add its location to TW Bookcase for easy management.

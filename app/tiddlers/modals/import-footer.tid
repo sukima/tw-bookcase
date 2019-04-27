@@ -1,0 +1,15 @@
+title: $:/modals/import-footer
+
+<$button>
+<$action-sendmessage $message="tm-close-tiddler"/>
+<$action-deletetiddler $tiddler="$:/temp/import-path-value"/>
+{{$:/core/images/close-button}}
+Dismiss
+</$button>
+<$button>
+<$action-sendmessage $message="tm-close-tiddler"/>
+<$action-sendmessage $message="bookcase-import-wiki" $param={{$:/temp/import-path-value}}/>
+<$action-deletetiddler $tiddler="$:/temp/import-path-value"/>
+{{$:/core/images/done-button}}
+Import
+</$button>

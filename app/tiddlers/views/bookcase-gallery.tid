@@ -1,0 +1,34 @@
+title: $:/views/bookcase-gallery
+
+<style scoped>
+.bookcase-gallery {
+  display: flex;
+  justify-context: center;
+}
+.bookcase-gallery-item {
+  border: thin solid black;
+  border-radius: 6px;
+  box-shadow: 4px 4px 4px;
+  width: 200px;
+  max-width: 200px;
+  min-height: 150px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+.bookcase-gallery-item .path {
+  font-size: 0.9em;
+  color: #999;
+  padding: 0 5px 5px;
+}
+</style>
+<div class="bookcase-gallery">
+<$bookcase tiddler="$:/state/bookcase-wikis" emptyMessage="""
+<div class="bookcase-empty-gallery">{{$:/empty-message}}</div>
+""">
+<div class="bookcase-gallery-item">
+<a class="tc-tiddlylink tc-tiddlylink-external" href=<<href>> title=<<path>>><$text text=<<title>>/></a>
+<small class="path"><<path>></small>
+</div>
+</$bookcase>
+</div>

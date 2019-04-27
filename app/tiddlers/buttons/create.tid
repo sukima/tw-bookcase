@@ -1,0 +1,10 @@
+title: $:/buttons/bookcase-create
+
+<$button
+  class="tc-btn-invisible"
+  tooltip="Create a new TiddlyWiki folder"
+>
+<$action-sendmessage $message="tm-modal" $param="$:/modals/create-wiki"/>
+{{$:/core/images/new-button}}
+Create Wiki
+</$button>

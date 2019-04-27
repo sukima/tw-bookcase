@@ -1,0 +1,3 @@
+title: Creating a new wiki
+
+This action will ask you for a path that has yet to exist. This will then create the folder for you (if needed) and install a fresh ~TiddlyWiki there.

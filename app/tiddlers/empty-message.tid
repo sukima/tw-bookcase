@@ -1,0 +1,14 @@
+title: $:/empty-message
+
+No ~TiddlyWikis available yet. You can <$button
+  message="tm-modal"
+  param="$:/modals/create-wiki"
+  class="tc-btn-invisible tc-wikilink"
+  tooltip="Create a new TiddlyWiki folder"
+>Create one</$button> or <$button
+  message="tm-modal"
+  param="$:/modals/import-wiki"
+  class="tc-btn-invisible tc-wikilink"
+  tooltip="Import an existing TiddlyWiki folder"
+>Import one</$button>.
+

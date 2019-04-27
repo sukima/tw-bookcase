@@ -1,0 +1,60 @@
+title: $:/views/bookcase-table
+
+\define delete-tooltip() Delete $(title)$
+\define running-icon-class() status-icon running-icon $(is-running)$ 
+\define not-running-icon-class() status-icon not-running-icon $(is-running)$ 
+<style scoped>
+.bookcase-table {
+  width: 100%;
+}
+.bookcase-table td svg {
+  height: 2em;
+}
+.bookcase-table .title {
+  font-size: 1.2em;
+  padding: 5px;
+}
+.bookcase-table .path {
+  font-size: 0.9em;
+  color: #999;
+  padding: 0 5px 5px;
+}
+.bookcase-table .status-icon {
+  float: left;
+  padding: 15px 10px 10px 5px;
+}
+.bookcase-table .not-running-icon {
+  display: block;
+}
+.bookcase-table .not-running-icon.is-running {
+  display: none;
+}
+.bookcase-table .running-icon {
+  display: none;
+}
+.bookcase-table .running-icon.is-running {
+  display: block;
+}
+</style>
+<table class="bookcase-table">
+  <tbody>
+    <$bookcase tiddler="$:/state/bookcase-wikis" emptyMessage="""
+    <tr><td colspan="2" align="center">{{$:/empty-message}}</td></tr>
+    """>
+    <tr>
+    <td>
+    <div class=<<running-icon-class>> title="instance is running">{{$:/core/images/timestamp-on}}</div>
+    <div class=<<not-running-icon-class>> title="instance is not running">{{$:/core/images/timestamp-off}}</div>
+    <div class="title"><a class="tc-tiddlylink tc-tiddlylink-external" href=<<href>> title=<<created-at>>><$text text=<<title>>/></a></div>
+    <div class="path"><$text text=<<path>>/></div>
+    </td>
+    <td align="center">
+    <$button class="tc-btn-invisible" tooltip=<<delete-tooltip>>>
+    <$action-sendmessage $message="bookcase-delete-wiki" $param=<<id>>/>
+    {{$:/core/images/delete-button}}
+    </$button>
+    </td>
+    </tr>
+    </$bookcase>
+  </tbody>
+</table>

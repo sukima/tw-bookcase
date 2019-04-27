@@ -1,0 +1,25 @@
+title: Configuration
+
+The configuration is in JSON format and is usually called `tw-bookcase.info`.
+
+```json
+{
+  "port": 1234,
+  "defaultPath": "/optional/path/to/prefix/the/create/dialog",
+  "wikis": [
+    {
+      "slug": "foobar",
+      "path": "/path/to/tiddly-wiki/folder"
+    }
+  ]
+}
+```
+
+; `port`
+: //optional// ''number'' -- The port to serve TW Bookcase on (Default: `8088`)
+; `defaultPath`
+: //optional// ''string'' -- A string used to pre-fill any dialogs to make creating new wikis with less typing. See [[DefaultPath]]
+; `wikis`
+: required ''array'' -- A list of wiki definitions.
+
+This file gets updated automatically while you use the application. You won;t need to edit it yourself unless you want to customize the `port` or `defaultPath`.

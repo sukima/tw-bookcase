@@ -1,0 +1,10 @@
+title: $:/buttons/bookcase-gallery
+
+<$button
+  class="tc-btn-invisible"
+  tooltip="Show wikis in a gallery view"
+  set="$:/state/bookcase-view-mode"
+  setTo="gallery"
+>
+{{$:/core/images/picture}}
+</$button>

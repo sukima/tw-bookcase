@@ -12,7 +12,10 @@
     "url": "https://github.com/sukima/tw-bookcase.git"
   },
   "bin": {
-    "bookcase": "./bookcase.js"
+    "tw-bookcase": "./bookcase.js"
+  },
+  "scripts": {
+    "prepublish": "tiddlywiki app --build readme"
   },
   "keywords": [
     "tiddlywiki",
@@ -21,9 +24,15 @@
     "server"
   ],
   "dependencies": {
-    "tiddlywiki": "^5.1.18"
+    "express": "^4.16.4",
+    "http-proxy": "^1.17.0",
+    "mkdirp": "^0.5.1",
+    "morgan": "^1.9.1",
+    "slug": "^1.1.0",
+    "tiddlywiki": "^5.1.18",
+    "trash": "^5.2.0"
   },
   "engines": {
-    "node": ">=10.15.3"
+    "node": ">=10"
   }
 }
