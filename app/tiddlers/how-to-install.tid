@@ -14,7 +14,6 @@ title: How to Install
 ## `tw-bookcase mynewwiki --init` to create a folder for a new wiki that includes server-related components
 ## `tw-bookcase mynewwiki --listen` to start TW Bookcase
 ## Visit http://127.0.0.1:8088/ in your browser (Note the default port number is `8088`)
-# Learn more about [[How to Use]] TW Bookcase.
 
 The `-g` flag causes TW Bookcase to be installed globally. Without it, TW Bookcase will only be available in the directory where you installed it.
 
