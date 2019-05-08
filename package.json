@@ -1,6 +1,6 @@
 {
   "name": "tw-bookcase",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Proxy server and admin app for multi-TiddlyWiki instances",
   "author": "Devin Weaver (@sukima) <suki@tritarget.org> (https://tritarget.org/)",
   "license": "MIT",
