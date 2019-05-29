@@ -4,7 +4,7 @@
   "description": "Proxy server and admin app for multi-TiddlyWiki instances",
   "author": "Devin Weaver (@sukima) <suki@tritarget.org> (https://tritarget.org/)",
   "license": "MIT",
-  "preferGlobal": "true",
+  "preferGlobal": true,
   "private": false,
   "main": "./libs/bookcase.js",
   "repository": {
